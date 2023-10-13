@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
+import {CiLemon, CiApple,CiAvocado,CiBacon } from "react-icons/ci"
 //Atoms
 import { FaUser } from "react-icons/fa";
-import { CiAvocado, CiLemon, CiApple, CiBacon } from "react-icons/ci";
 import { Button, TextP, Card } from "./components/atoms";
 import { Header, Menu } from "./components/organisms";
 import Clock from "./components/atoms/Clock";
@@ -57,6 +57,7 @@ function App() {
         <Button action={() => handleMenu("Time")} buttonTitle="Time"></Button>
         <Button action={() => handleMenu("Home")} buttonTitle="Home"></Button>
         <Menu
+
           menus={[
             { title: "Juli", uri: "lezgo", icon: <CiLemon></CiLemon> },
             { title: "Lezgi", uri: "lezgo", icon: <CiApple></CiApple> },
